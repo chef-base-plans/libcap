@@ -54,7 +54,6 @@ control 'core-plans-libarchive' do
     its('stderr') { should match /usage: getcap/ }
     its('exit_status') { should eq 1 }
   end
-
   getpcaps_exists = command("ls #{File.join(bin_dir, "getpcaps")}")
   describe getpcaps_exists do
     its('stdout') { should match /getpcaps/ }
