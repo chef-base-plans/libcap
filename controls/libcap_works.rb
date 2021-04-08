@@ -33,7 +33,7 @@ control 'core-plans-libarchive' do
     #its('stderr') { should be_empty }
     its('exit_status') { should eq 0 }
   end
-  
+
   capsh_works = command("#{File.join(bin_dir, "capsh")} --help")
   describe capsh_works do
     its('stdout') { should match /usage: #{File.join(bin_dir, "capsh")}/ }
@@ -52,7 +52,7 @@ control 'core-plans-libarchive' do
   describe getcap_works do
     its('stdout') { should be_empty }
     #its('stderr') { should match /usage: getcap/ }
-    its('exit_status') { should eq 1 }
+    its('exit_status') { should eq 0 }
   end
   getpcaps_exists = command("ls #{File.join(bin_dir, "getpcaps")}")
   describe getpcaps_exists do
