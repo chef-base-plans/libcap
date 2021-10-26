@@ -1,12 +1,12 @@
 pkg_name=libcap
 pkg_origin=core
-pkg_version=2.49
+pkg_version=2.60
 pkg_maintainer="The Habitat Maintainers <humans@habitat.sh>"
 pkg_description="POSIX 1003.1e capabilities."
 pkg_upstream_url="http://sites.google.com/site/fullycapable/"
 pkg_license=('gplv2')
 pkg_source="https://www.kernel.org/pub/linux/libs/security/linux-privs/libcap2/${pkg_name}-${pkg_version}.tar.xz"
-pkg_shasum="e98bc4d93645082ec787730b0fd1a712b38882465c505777de17c338831ee181"
+pkg_shasum="06a92076ce39a78bd28089e32085f1bde7f3bfa448fad37d895c2358f760b2eb"
 pkg_deps=(
   core/glibc
   core/attr
